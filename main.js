@@ -222,9 +222,9 @@ class MuskEmpireAPI {
             .split('\n')
             .filter(Boolean);
 
-        const nangcap = await this.askQuestion('Bạn có muốn nâng cấp kỹ năng không? (y/n): ');
+        const nangcap = 'y';
         const hoinangcap = nangcap.toLowerCase() === 'y';
-        const pvp = await this.askQuestion('Bạn có muốn chơi đàm phán không? (y/n): ');
+        const pvp = 'y';
         const hoipvp = pvp.toLowerCase() === 'y';
 
         while (true) {
