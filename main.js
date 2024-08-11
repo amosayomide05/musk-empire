@@ -222,7 +222,7 @@ class MuskEmpireAPI {
             .split('\n')
             .filter(Boolean);
 
-        const nangcap = 'y';
+        const nangcap = 'n';
         const hoinangcap = nangcap.toLowerCase() === 'y';
         const pvp = 'y';
         const hoipvp = pvp.toLowerCase() === 'y';
