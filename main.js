@@ -222,9 +222,9 @@ class MuskEmpireAPI {
             .split('\n')
             .filter(Boolean);
 
-        const nangcap = 'n';
-        const hoinangcap = nangcap.toLowerCase() === 'y';
-        const pvp = 'y';
+        const nangcap = 'y';
+        const hoinangcap = nangcap.toLowerCase() === 'n';
+        const pvp = 'n';
         const hoipvp = pvp.toLowerCase() === 'y';
 
         while (true) {
@@ -277,6 +277,7 @@ class MuskEmpireAPI {
     async processDailyRewards(apiKey, proxy) {
         try {
             const userData = await this.getUserData(apiKey, proxy);
+
             const dailyRewards = userData.data.dailyRewards;
             for (const [rewardId, status] of Object.entries(dailyRewards)) {
                 if (status === 'canTake') {
