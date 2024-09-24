@@ -53,7 +53,7 @@ class MuskEmpireAPI {
         const agent = new HttpsProxyAgent(proxy);
         const response = await axios.post(url, payload, {
             headers,
-            httpsAgent: agent
+            
         });
         return response.data;
     }
