@@ -40,7 +40,8 @@ class MuskEmpireAPI {
         apiHash = temp['Api-Hash']
         const response = await axios.post(url, payload, {
             headers: myHeader.headers,
-            httpsAgent: agent
+            
+            
         });
         return response.data;
     }
@@ -53,7 +54,7 @@ class MuskEmpireAPI {
         const agent = new HttpsProxyAgent(proxy);
         const response = await axios.post(url, payload, {
             headers,
-            httpsAgent: agent
+            
         });
         return response.data;
     }
@@ -66,7 +67,7 @@ class MuskEmpireAPI {
         const agent = new HttpsProxyAgent(proxy);
         const response = await axios.post(url, payload, {
             headers,
-            httpsAgent: agent
+            
         });
         return response.data;
     }
@@ -79,7 +80,7 @@ class MuskEmpireAPI {
         const agent = new HttpsProxyAgent(proxy);
         const response = await axios.post(url, payload, {
             headers,
-            httpsAgent: agent
+            
         });
         return response.data;
     }
@@ -92,7 +93,7 @@ class MuskEmpireAPI {
         const agent = new HttpsProxyAgent(proxy);
         const response = await axios.post(url, payload, {
             headers,
-            httpsAgent: agent
+            
         });
         return response.data;
     }
@@ -116,7 +117,7 @@ class MuskEmpireAPI {
         const agent = new HttpsProxyAgent(proxy);
         const response = await axios.post(url, payload, {
             headers,
-            httpsAgent: agent
+            
         });
         return response.data;
     }
@@ -151,7 +152,7 @@ class MuskEmpireAPI {
         const agent = new HttpsProxyAgent(proxy);
         const response = await axios.post(url, payload, {
             headers,
-            httpsAgent: agent
+            
         });
         return response.data;
     }
@@ -164,7 +165,7 @@ class MuskEmpireAPI {
         const agent = new HttpsProxyAgent(proxy);
         const response = await axios.post(url, payload, {
             headers,
-            httpsAgent: agent
+            
         });
         return response.data;
     }
@@ -173,7 +174,7 @@ class MuskEmpireAPI {
         try {
             const proxyAgent = new HttpsProxyAgent(proxy);
             const response = await axios.get('https://api.ipify.org?format=json', {
-                httpsAgent: proxyAgent
+                
             });
             if (response.status === 200) {
                 return response.data.ip;
